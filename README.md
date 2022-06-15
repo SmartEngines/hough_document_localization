@@ -1,6 +1,6 @@
 # Results of experiments for Advanced Hough-based method for on-device document localization
 
-This repository contains document localization results of the system proposed in [this article], metrics for accuracy measuremrents and runlists of [[MIDV-500 dataset](https://doi.org/10.18287/2412-6179-2019-43-5-818-824)].
+This repository contains document localization results of the system proposed in [[this article](http://www.computeroptics.ru/KO/PDF/KO45-5/450509.pdf)], metrics for accuracy measuremrents and runlists of [[MIDV-500 dataset](https://doi.org/10.18287/2412-6179-2019-43-5-818-824)].
 
 To calculate the statistics use run_stat.py. For our experiments the code was executed used Python 3.9.2 and following python modules: numpy 1.19.5, opencv-python 4.5.1.48, Polygon3 3.0.8.
 
@@ -51,3 +51,21 @@ Description of each source code file and data directory follows.
 - `at_least_three_vertices_in_frame_closed.lst` is a list of images having at least 3 vertices lying inside the frame rectangle engorged by a small value eps in every direction (that is inside of a convex hull of the following points: (-eps, -eps), (image width + eps, -eps), (image width + eps, image height + eps), (-eps, image height + eps))
 
 - `at_least_three_vertices_in_frame_half_closed.lst` is a list of images having at least 3 vertices lying inside the frame rectangle engorged by a small value eps in top and left directions (that is inside of a convex hull of the following points: (-eps, -eps), (image width, -eps), (image width, image height), (-eps, image height))
+
+## Citing work 
+If you end up using our code or results in your research, please consider citing:
+``` bash
+@article{tropin2021advanced,
+  title={Advanced Hough-based method for on-device document localization},
+  author={Tropin, DV and Ershov, AM and Nikolaev, DP and Arlazarov, VV},
+  journal={Computer Optics},
+  volume={45},
+  number={5},
+  pages={702--712},
+  year={2021}, 
+  doi={10.18287/2412-6179-CO-895}
+}
+```
+
+
+
